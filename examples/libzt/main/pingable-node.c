@@ -4,6 +4,8 @@
  * Pingable node
  */
 
+
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -23,8 +25,6 @@
 
 #include "ZeroTierSockets.h"
 
-#include <stdio.h>
-#include <stdlib.h>
 
 int app_main(int argc, char** argv)
 {
