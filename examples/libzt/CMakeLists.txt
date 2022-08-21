@@ -443,33 +443,9 @@ if(BUILD_SHARED_LIB)
         miniupnpc_pic)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-    if(BUILD_ANDROID)
-        target_link_libraries(${DYNAMIC_LIB_NAME} android log)
-        if(CMAKE_ANDROID_ARCH_ABI STREQUAL "arm64-v8a")
-            target_compile_options(zto_pic PRIVATE -march=armv8-a+crypto)
-        endif()
-    endif()
+   
     if(NOT ZTS_DISABLE_CENTRAL_API)
         target_link_libraries(${DYNAMIC_LIB_NAME} ${CURL_LIBRARIES})
     endif()
 endif() # BUILD_SHARED_LIB
 
-
-# ------------------------------------------------------------------------------
-# |                                  INSTALL                                   |
-# ------------------------------------------------------------------------------
-
-if (ALLOW_INSTALL_TARGET)
-    set(PUBLIC_ZT_HEADERS ${PROJECT_SOURCE_DIR}/include/ZeroTierSockets.h)
-    set_target_properties(${STATIC_LIB_NAME} PROPERTIES PUBLIC_HEADER
-        "${PUBLIC_ZT_HEADERS}")
-    install(
-        TARGETS ${STATIC_LIB_NAME}
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib
-        PUBLIC_HEADER DESTINATION include)
-    install(
-        TARGETS ${DYNAMIC_LIB_NAME}
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
-endif()
