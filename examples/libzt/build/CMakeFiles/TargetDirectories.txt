@@ -14,7 +14,6 @@
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/size-components.dir
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/uf2-app.dir
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/uf2.dir
-/home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/pingable-node.dir
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/zto_obj.dir
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/libnatpmp_obj.dir
 /home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build/CMakeFiles/miniupnpc_obj.dir

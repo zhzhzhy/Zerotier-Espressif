@@ -125,13 +125,17 @@ if(CMAKE_BUILD_TYPE STREQUAL "Release" OR CMAKE_BUILD_TYPE STREQUAL "release")
     endif()
 endif()
 
+
+
 # -------------------------------------------------------------------------------
 # |                                 EXAMPLES                                    |
 # -------------------------------------------------------------------------------
 
-    add_executable(pingable-node
-        ${PROJ_DIR}/main/pingable-node.c)
-    target_link_libraries(pingable-node ${STATIC_LIB_NAME})
+#    add_executable(pingable-node
+#       ${PROJ_DIR}/main/pingable-node.c)
+#    target_link_libraries(pingable-node ${STATIC_LIB_NAME})
+
+
 
 # ------------------------------------------------------------------------------
 # |                                    FLAGS                                   |
