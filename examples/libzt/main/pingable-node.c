@@ -26,7 +26,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int app_main(int argc, char** argv)
+void app_main(int argc, char** argv)
 {
     if (argc != 2) {
         printf("\nUsage:\n");
