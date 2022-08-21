@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//Enable the install target
+ALLOW_INSTALL_TARGET:BOOL=ON
+
+//Build host selftest binary
+BUILD_HOST_SELFTEST:BOOL=ON
+
+//Build shared libary
+BUILD_SHARED_LIB:BOOL=ON
+
+//Build static library
+BUILD_STATIC_LIB:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-addr2line
 
@@ -159,7 +171,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=pingable-node
+CMAKE_PROJECT_NAME:STATIC=zt
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib
@@ -262,6 +274,9 @@ MBEDTLS_FATAL_WARNINGS:BOOL=ON
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
+//Compile with -fstack-protector
+STACK_PROTECTOR:BOOL=ON
+
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
 
@@ -273,6 +288,9 @@ USE_SHARED_MBEDTLS_LIBRARY:BOOL=OFF
 
 //Build mbed TLS static library.
 USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
+
+//Disable central API
+ZTS_DISABLE_CENTRAL_API:BOOL=ON
 
 //Dependencies for the target
 __idf_app_trace_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
@@ -518,13 +536,13 @@ mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_
 mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp32;general;mbedcrypto;
 
 //Value Computed by CMake
-pingable-node_BINARY_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build
+zt_BINARY_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/examples/libzt/build
 
 //Value Computed by CMake
-pingable-node_IS_TOP_LEVEL:STATIC=ON
+zt_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-pingable-node_SOURCE_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/examples/libzt
+zt_SOURCE_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/examples/libzt
 
 
 ########################

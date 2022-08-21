@@ -4,7 +4,6 @@ cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(zt)
-find_package(Threads)
 
 if (USE_SANITIZER STREQUAL "Address")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
@@ -130,7 +129,6 @@ endif()
 # |                                 EXAMPLES                                    |
 # -------------------------------------------------------------------------------
 
-if(BUILD_HOST_EXAMPLES)
     add_executable(pingable-node
         ${PROJ_DIR}/main/pingable-node.c)
     target_link_libraries(pingable-node ${STATIC_LIB_NAME})

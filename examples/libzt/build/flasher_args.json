@@ -9,11 +9,11 @@
     },
     "flash_files" : {
         "0x1000" : "bootloader/bootloader.bin",
-        "0x10000" : "pingable-node.bin",
+        "0x10000" : "zt.bin",
         "0x8000" : "partition_table/partition-table.bin"
     },
     "bootloader" : { "offset" : "0x1000", "file" : "bootloader/bootloader.bin", "encrypted" : "false" },
-    "app" : { "offset" : "0x10000", "file" : "pingable-node.bin", "encrypted" : "false" },
+    "app" : { "offset" : "0x10000", "file" : "zt.bin", "encrypted" : "false" },
     "partition-table" : { "offset" : "0x8000", "file" : "partition_table/partition-table.bin", "encrypted" : "false" },
     "extra_esptool_args" : {
         "after"  : "hard_reset",
