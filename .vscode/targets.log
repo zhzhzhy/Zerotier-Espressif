@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug  9 20:23:44 2022
+# Make data base, printed on Sat Aug 20 19:40:42 2022
 
 # Variables
 
@@ -53,11 +53,11 @@ OLDPWD = /home/zzy
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/zzy/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = /home/zzy/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.MG71Q1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.2GY6Q1
 # default
 .LOADED := 
 # default
@@ -89,13 +89,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/zzy/.oh-my-zsh
 # environment
-VSCODE_PID = 34789
+VSCODE_PID = 9262
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2409,unix/zzy-MS-7A40:/tmp/.ICE-unix/2409
+SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2327,unix/zzy-MS-7A40:/tmp/.ICE-unix/2327
 # automatic
 *F = $(notdir $*)
 # environment
@@ -135,7 +135,7 @@ LC_MONETARY = zh_CN.UTF-8
 # environment
 LC_TIME = zh_CN.UTF-8
 # environment
-INVOCATION_ID = a8217f64b63b42a0b998e5fee01ff261
+INVOCATION_ID = 9c18dd55b3f74a2e8b215cbaa1bac068
 # environment
 USERNAME = zzy
 # environment
@@ -165,7 +165,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2435
+SYSTEMD_EXEC_PID = 2346
 # environment
 DISPLAY = :0
 # environment
@@ -175,11 +175,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2238
+MANAGERPID = 1979
 # environment
 LC_MEASUREMENT = zh_CN.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 34789
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9262
 # environment
 PAGER = less
 # environment
@@ -189,7 +189,7 @@ LC_PAPER = zh_CN.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:36673
+JOURNAL_STREAM = 8:38274
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -201,7 +201,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b2390427-1.70.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b2390427-1.70.1-main.sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -283,11 +283,11 @@ GNUmakefile:
 # current buf: size = 8162 B / used = 195 B / count = 21 / avg = 9 B
 
 # strcache performance: lookups = 24 / hit rate = 12%
+# hash-table stats:
  
 make: *** No rule to make target 'all'.  Stop.
 
-# hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Tue Aug  9 20:23:44 2022
+# Finished Make data base on Sat Aug 20 19:40:42 2022
 
  
