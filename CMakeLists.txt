@@ -23,6 +23,10 @@ endif()
 # |                             PLATFORM DETECTION                             |
 # ------------------------------------------------------------------------------
 
+if(POLICY CMP0057)
+cmake_policy(SET CMP0057 NEW)
+endif()
+
 set(targets "esp32" "esp32s2" "esp32s3" "esp32c3" "esp32h2" "esp32c2")
 
 if("${TARGET}" IN_LIST targets)
@@ -323,7 +327,6 @@ endif()
 # |                                 EXAMPLES                                    |
 # -------------------------------------------------------------------------------
 
-if(BUILD_HOST_EXAMPLES)
     add_executable(${elf_file}
         ${PROJ_DIR}/examples/c/pingable-node.c)
 
