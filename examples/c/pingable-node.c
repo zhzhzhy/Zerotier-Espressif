@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char** argv)
+int app_main(int argc, char** argv)
 {
     if (argc != 2) {
         printf("\nUsage:\n");
