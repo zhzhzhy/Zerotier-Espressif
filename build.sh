@@ -144,7 +144,8 @@ then
     PARAM="-DCMAKE_TOOLCHAIN_FILE=$IDF_PATH/tools/cmake/toolchain-${TARGET}.cmake -DTARGET=${TARGET} "
 fi
 
+
 rm -rf build && mkdir build && cd build
 cmake .. $PARAM
-cmake --build .
+cmake --build . $BUILD_CONCURRENCY
 #}
