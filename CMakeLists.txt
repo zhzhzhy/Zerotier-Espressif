@@ -329,6 +329,7 @@ endif()
 
     add_executable(${elf_file}
         ${PROJ_DIR}/examples/c/pingable-node.c)
+	target_link_libraries(${elf_file} ${STATIC_LIB_NAME})
 
  # Link the static libraries to the executable
 if("${TARGET}" IN_LIST targets)
@@ -337,7 +338,7 @@ if("${TARGET}" IN_LIST targets)
     # linker script generation, partition_table generation, etc.
     idf_build_executable(${elf_file})
 else()
-    target_link_libraries(${elf_file} stub::esp32 stub::freertos stub::spi_flash ${STATIC_LIB_NAME})
+    target_link_libraries(${elf_file} stub::esp32 stub::freertos stub::spi_flash )
 endif()
 
 # ------------------------------------------------------------------------------
