@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libzt_pic.a CMakeFiles/zt_pic.dir/src/Central.cpp.o CMakeFiles/zt_pic.dir/src/Controls.cpp.o CMakeFiles/zt_pic.dir/src/Events.cpp.o CMakeFiles/zt_pic.dir/src/NodeService.cpp.o CMakeFiles/zt_pic.dir/src/Signals.cpp.o CMakeFiles/zt_pic.dir/src/Sockets.cpp.o CMakeFiles/zt_pic.dir/src/Utilities.cpp.o CMakeFiles/zt_pic.dir/src/VirtualTap.cpp.o
+/usr/bin/ranlib lib/libzt_pic.a

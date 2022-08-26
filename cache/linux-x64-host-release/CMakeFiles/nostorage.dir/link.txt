@@ -1,0 +1,1 @@
+/usr/bin/c++  -DZTS_ENABLE_STATS=1 -DZTS_DISABLE_CENTRAL_API=1           -DZT_SDK=1 -DZT_USE_MINIUPNPC=1 -D_USING_LWIP_DEFINITIONS_=0 -DOMIT_JSON_SUPPORT=1 -Wno-unused-parameter -Wall -Wextra -std=c++11 -O3 -DNDEBUG -w -Wno-everything          -O3 -rdynamic CMakeFiles/nostorage.dir/examples/c/nostorage.c.o -o bin/nostorage  lib/libzt.a 

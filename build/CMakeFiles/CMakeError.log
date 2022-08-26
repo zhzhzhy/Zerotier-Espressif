@@ -1,0 +1,103 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24bf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24bf5.dir/build.make CMakeFiles/cmTC_24bf5.dir/build
+gmake[1]: Entering directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24bf5.dir/src.c.obj
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -mlongcalls -Wno-frame-address   -o CMakeFiles/cmTC_24bf5.dir/src.c.obj -c /home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_24bf5
+/home/zzy/.espressif/tools/cmake/3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24bf5.dir/link.txt --verbose=1
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   CMakeFiles/cmTC_24bf5.dir/src.c.obj -o cmTC_24bf5 
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0x4): undefined reference to `pthread_create'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0x8): undefined reference to `pthread_detach'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0xc): undefined reference to `pthread_cancel'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0x10): undefined reference to `pthread_join'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0x14): undefined reference to `pthread_atfork'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj:(.literal+0x18): undefined reference to `pthread_exit'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_24bf5.dir/src.c.obj: in function `main':
+src.c:(.text+0x1c): undefined reference to `pthread_create'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x26): undefined reference to `pthread_detach'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x30): undefined reference to `pthread_cancel'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x3c): undefined reference to `pthread_join'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x48): undefined reference to `pthread_atfork'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_exit'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_24bf5.dir/build.make:99: cmTC_24bf5] Error 1
+gmake[1]: Leaving directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_24bf5/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_07b8b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_07b8b.dir/build.make CMakeFiles/cmTC_07b8b.dir/build
+gmake[1]: Entering directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07b8b.dir/CheckFunctionExists.c.obj
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_07b8b.dir/CheckFunctionExists.c.obj -c /home/zzy/.espressif/tools/cmake/3.23.1/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_07b8b
+/home/zzy/.espressif/tools/cmake/3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07b8b.dir/link.txt --verbose=1
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_07b8b.dir/CheckFunctionExists.c.obj -o cmTC_07b8b  -lpthreads 
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_07b8b.dir/build.make:99: cmTC_07b8b] Error 1
+gmake[1]: Leaving directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_07b8b/fast] Error 2
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: /home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_30679/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_30679.dir/build.make CMakeFiles/cmTC_30679.dir/build
+gmake[1]: Entering directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30679.dir/CheckFunctionExists.c.obj
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_30679.dir/CheckFunctionExists.c.obj -c /home/zzy/.espressif/tools/cmake/3.23.1/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_30679
+/home/zzy/.espressif/tools/cmake/3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30679.dir/link.txt --verbose=1
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_30679.dir/CheckFunctionExists.c.obj -o cmTC_30679  -lpthread 
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthread
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_30679.dir/build.make:99: cmTC_30679] Error 1
+gmake[1]: Leaving directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_30679/fast] Error 2
+
+
+
+Determining if compiler accepts -pthread failed with the following output:
+Change Dir: /home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bf734/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bf734.dir/build.make CMakeFiles/cmTC_bf734.dir/build
+gmake[1]: Entering directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf734.dir/CheckForPthreads.c.obj
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address   -o CMakeFiles/cmTC_bf734.dir/CheckForPthreads.c.obj -c /home/zzy/.espressif/tools/cmake/3.23.1/share/cmake-3.23/Modules/CheckForPthreads.c
+Linking C executable cmTC_bf734
+/home/zzy/.espressif/tools/cmake/3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf734.dir/link.txt --verbose=1
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   CMakeFiles/cmTC_bf734.dir/CheckForPthreads.c.obj -o cmTC_bf734  -pthread 
+xtensa-esp32-elf-gcc: error: unrecognized command line option '-pthread'
+gmake[1]: *** [CMakeFiles/cmTC_bf734.dir/build.make:99: cmTC_bf734] Error 1
+gmake[1]: Leaving directory '/home/zzy/PROJ/libzt/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bf734/fast] Error 2
+
+
+
