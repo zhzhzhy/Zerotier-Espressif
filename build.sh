@@ -377,7 +377,7 @@ build_esp32()
     if [[ -n $TARGET ]]
 	then
     	# Target is not null, specify the build parameters
-    	PARAM="-DCMAKE_TOOLCHAIN_FILE=$IDF_PATH/tools/cmake/toolchain-${TARGET}.cmake -DTARGET=${TARGET} "
+    	PARAM="-DCMAKE_TOOLCHAIN_FILE=$IDF_PATH/tools/cmake/toolchain-${TARGET}.cmake -DTARGET=${TARGET} -GNinja"
     fi
     #$CMAKE $VARIANT -H. -B$CACHE_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE
     #$CMAKE --build $CACHE_DIR $BUILD_CONCURRENCY
