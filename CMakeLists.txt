@@ -675,84 +675,6 @@ if(BUILD_STATIC_LIB)
     endif()
 endif() # BUILD_STATIC_LIB
 
-# ------------------------------------------------------------------------------
-# |                                SHARED LIB                                  |
-# ------------------------------------------------------------------------------
-
-if(BUILD_SHARED_LIB)
-    # libzt.so/dylib/dll
-    add_library(${DYNAMIC_LIB_NAME} SHARED ${libztSrcGlob})
-    target_link_libraries(${DYNAMIC_LIB_NAME} ${PYTHON_LIBRARIES})
-    target_link_libraries(${DYNAMIC_LIB_NAME} zt_pic lwip_pic zto_pic natpmp_pic
-                                                miniupnpc_pic)
-    set_target_properties(${DYNAMIC_LIB_NAME}
-        PROPERTIES COMPILE_FLAGS
-            "${ZT_FLAGS}")
-    set_target_properties(
-        ${DYNAMIC_LIB_NAME} PROPERTIES OUTPUT_NAME ${DYNAMIC_LIB_OUTPUT_NAME}
-        WINDOWS_EXPORT_ALL_SYMBOLS true)
-    target_link_libraries(
-        ${DYNAMIC_LIB_NAME}
-        ${CMAKE_THREAD_LIBS_INIT}
-        ${ws2_32_LIBRARY_PATH}
-        ${shlwapi_LIBRARY_PATH}
-        ${iphlpapi_LIBRARY_PATH}
-        zt_pic
-        lwip_pic
-        zto_pic
-        natpmp_pic
-        miniupnpc_pic)
-    set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-
-    if(BUILD_ANDROID)
-        target_link_libraries(${DYNAMIC_LIB_NAME} android log)
-        if(CMAKE_ANDROID_ARCH_ABI STREQUAL "arm64-v8a")
-            target_compile_options(zto_pic PRIVATE -march=armv8-a+crypto)
-        endif()
-    endif()
-    if(NOT ZTS_DISABLE_CENTRAL_API)
-        target_link_libraries(${DYNAMIC_LIB_NAME} ${CURL_LIBRARIES})
-    endif()
-endif() # BUILD_SHARED_LIB
-
-# xcode framework
-if(IN_XCODE)
-
-    # stdint.h is needed for API definitions but can cause conflicts in certain
-    # projects where integer types may already be defined. Thus this flag is used to
-    # exclude their definition in ZeroTierSockets.h
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DZTS_NO_STDINT_H=0")
-
-    include_directories(${frameworkHeaderGlob})
-
-    add_library(
-        ${XCODE_FRAMEWORK_NAME} STATIC
-        $<TARGET_OBJECTS:libzt_obj>
-        $<TARGET_OBJECTS:zto_obj>
-        $<TARGET_OBJECTS:libnatpmp_obj>
-        $<TARGET_OBJECTS:miniupnpc_obj>
-        $<TARGET_OBJECTS:lwip_obj>
-        ${libztSrcGlob}
-        ${frameworkHeaderGlob})
-
-    set_target_properties(${XCODE_FRAMEWORK_NAME} PROPERTIES ENABLE_BITCODE "YES")
-    set_target_properties(${XCODE_FRAMEWORK_NAME}
-                                                PROPERTIES BITCODE_GENERATION_MODE bitcode)
-    target_compile_options(${XCODE_FRAMEWORK_NAME} PUBLIC -fembed-bitcode)
-    target_link_libraries(${XCODE_FRAMEWORK_NAME} PUBLIC -fembed-bitcode)
-
-    set_target_properties(
-        ${XCODE_FRAMEWORK_NAME}
-        PROPERTIES
-            FRAMEWORK YES
-            FRAMEWORK_VERSION A
-            XCODE_ATTRIBUTE_DEFINES_MODULE YES
-            MACOSX_FRAMEWORK_IDENTIFIER com.cmake.${XCODE_FRAMEWORK_NAME}
-            XCODE_ATTRIBUTE_MODULEMAP_FILE "${PROJ_DIR}/pkg/apple/module.modulemap"
-            PUBLIC_HEADER "${frameworkHeaderGlob}"
-            XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "iPhone Developer"
-            XCODE_ATTRIBUTE_CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES YES)
-endif()
 
 # ------------------------------------------------------------------------------
 # |                                  SELFTEST                                  |
@@ -780,8 +702,4 @@ if (ALLOW_INSTALL_TARGET)
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
         PUBLIC_HEADER DESTINATION include)
-    install(
-        TARGETS ${DYNAMIC_LIB_NAME}
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
 endif()
