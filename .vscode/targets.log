@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 27 18:05:47 2022
+# Make data base, printed on Sat Aug 27 20:26:09 2022
 
 # Variables
 
@@ -59,7 +57,7 @@ VSCODE_CODE_CACHE_PATH = /home/zzy/.config/Code/CachedData/e4503b30fc78200f846c6
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.1LTBR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.KQQBR1
 # default
 .LOADED := 
 # default
@@ -91,13 +89,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/zzy/.oh-my-zsh
 # environment
-VSCODE_PID = 26965
+VSCODE_PID = 4326
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2388,unix/zzy-MS-7A40:/tmp/.ICE-unix/2388
+SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2441,unix/zzy-MS-7A40:/tmp/.ICE-unix/2441
 # automatic
 *F = $(notdir $*)
 # environment
@@ -137,7 +135,7 @@ LC_MONETARY = zh_CN.UTF-8
 # environment
 LC_TIME = zh_CN.UTF-8
 # environment
-INVOCATION_ID = c39cad765c0d4215a03a7afc90ea0fdd
+INVOCATION_ID = 0cc09c051be448179fc7bc252665f75f
 # environment
 USERNAME = zzy
 # environment
@@ -167,7 +165,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2408
+SYSTEMD_EXEC_PID = 2461
 # environment
 DISPLAY = :0
 # environment
@@ -177,11 +175,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2195
+MANAGERPID = 2245
 # environment
 LC_MEASUREMENT = zh_CN.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 26965
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4326
 # environment
 PAGER = less
 # environment
@@ -191,7 +189,7 @@ LC_PAPER = zh_CN.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:47128
+JOURNAL_STREAM = 8:32471
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -229,9 +227,9 @@ LC_IDENTIFICATION = zh_CN.UTF-8
 
 # Directories
 
-# . (device 66310, inode 4592396): 21 files, no impossibilities.
+# . (device 66310, inode 4592396): 10 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,13 +279,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 251 B / avg = 8 B
-# current buf: size = 8162 B / used = 251 B / count = 29 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 156 B / avg = 8 B
+# current buf: size = 8162 B / used = 156 B / count = 18 / avg = 8 B
 
+# strcache performance: lookups = 21 / hit rate = 14%
  
-# strcache performance: lookups = 32 / hit rate = 9%
+make: *** No rule to make target 'all'.  Stop.
+
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Sat Aug 27 18:05:47 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
+# Finished Make data base on Sat Aug 27 20:26:09 2022
 
  

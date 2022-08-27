@@ -1,0 +1,24 @@
+name: Build Java JAR
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Checkout submodules
+      run: git submodule update --init
+
+    - name: Install JDK
+      run: sudo apt install default-jdk
+
+    - name: Build
+      run: ./build.sh host-jar "release"
+
+    - uses: actions/upload-artifact@v2
+      with:
+        path: dist
+

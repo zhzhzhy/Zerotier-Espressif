@@ -71,10 +71,13 @@ set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(INTERMEDIATE_LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib/intermediate)
-
+if(UNIX)
     set(LWIP_PORT_DIR ${PROJ_DIR}/ext/lwip-contrib/ports/unix/port)
+endif()
 
+if(BUILD_WIN)
     set(LWIP_PORT_DIR ${PROJ_DIR}/ext/lwip-contrib/ports/win32)
+endif()
 
 # ------------------------------------------------------------------------------
 # |                             INCLUDE DIRECTORIES                            |
@@ -104,6 +107,7 @@ include_directories(${LWIP_PORT_DIR}/include)
 # Defaults
 option(ALLOW_INSTALL_TARGET     "Enable the install target"   TRUE)
 option(BUILD_STATIC_LIB         "Build static library"        TRUE)
+option(BUILD_SHARED_LIB         "Build shared libary"         TRUE)
 option(BUILD_HOST_SELFTEST      "Build host selftest binary"  TRUE)
 option(ZTS_DISABLE_CENTRAL_API  "Disable central API"         TRUE)
 
@@ -291,11 +295,54 @@ endif()
 # |                                 EXAMPLES                                    |
 # -------------------------------------------------------------------------------
 
+if(BUILD_HOST_EXAMPLES)
     add_executable(pingable-node
         ${PROJ_DIR}/examples/c/pingable-node.c)
     target_link_libraries(pingable-node ${STATIC_LIB_NAME})
 
+    add_executable(statistics
+        ${PROJ_DIR}/examples/c/statistics.c)
+    target_link_libraries(statistics ${STATIC_LIB_NAME})
 
+    add_executable(adhoc
+        ${PROJ_DIR}/examples/c/adhoc.c)
+    target_link_libraries(adhoc ${STATIC_LIB_NAME})
+
+if(NOT ZTS_DISABLE_CENTRAL_API)
+    add_executable(centralapi
+        ${PROJ_DIR}/examples/c/centralapi.cpp)
+    #target_compile_options(centralapi PRIVATE "-Wno-tautological-overlap-compare")
+    target_link_libraries(centralapi ${STATIC_LIB_NAME})
+endif()
+
+    add_executable(callbackapi
+        ${PROJ_DIR}/examples/c/callbackapi.c)
+    target_link_libraries(callbackapi ${STATIC_LIB_NAME})
+
+    add_executable(nostorage
+        ${PROJ_DIR}/examples/c/nostorage.c)
+    target_link_libraries(nostorage ${STATIC_LIB_NAME})
+
+    add_executable(customroots
+        ${PROJ_DIR}/examples/c/customroots.c)
+    target_link_libraries(customroots ${STATIC_LIB_NAME})
+
+    add_executable(client
+        ${PROJ_DIR}/examples/c/client.c)
+    target_link_libraries(client ${STATIC_LIB_NAME})
+
+    add_executable(server
+        ${PROJ_DIR}/examples/c/server.c)
+    target_link_libraries(server ${STATIC_LIB_NAME})
+
+    add_executable(nonblockingclient
+        ${PROJ_DIR}/examples/c/nonblockingclient.c)
+    target_link_libraries(nonblockingclient ${STATIC_LIB_NAME})
+
+    add_executable(nonblockingserver
+        ${PROJ_DIR}/examples/c/nonblockingserver.c)
+    target_link_libraries(nonblockingserver ${STATIC_LIB_NAME})
+endif()
 
 # ------------------------------------------------------------------------------
 # |                                    FLAGS                                   |
@@ -629,6 +676,7 @@ if(BUILD_STATIC_LIB)
 endif() # BUILD_STATIC_LIB
 
 
+
 # ------------------------------------------------------------------------------
 # |                                  SELFTEST                                  |
 # ------------------------------------------------------------------------------
@@ -655,4 +703,5 @@ if (ALLOW_INSTALL_TARGET)
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
         PUBLIC_HEADER DESTINATION include)
+
 endif()

@@ -355,40 +355,6 @@ host()
     echo -e "\n - Build cache  : $CACHE_DIR\n - Build output : $BUILD_OUTPUT_DIR\n"
     $TREE $TARGET_BUILD_DIR
 }
-
-build_esp32()
-{
-    check_submodules
-    ARTIFACT="host"
-    # Default to release
-    BUILD_TYPE=${1:-release}
-    VARIANT="-DBUILD_HOST=True"
-    CACHE_DIR=$DEFAULT_HOST_BUILD_CACHE_DIR-$ARTIFACT-$BUILD_TYPE
-    TARGET_BUILD_DIR=$DEFAULT_HOST_BIN_OUTPUT_DIR-$ARTIFACT-$BUILD_TYPE
-    rm -rf $TARGET_BUILD_DIR
-    LIB_OUTPUT_DIR=$TARGET_BUILD_DIR/lib
-    BIN_OUTPUT_DIR=$TARGET_BUILD_DIR/bin
-    mkdir -p $LIB_OUTPUT_DIR
-    mkdir -p $BIN_OUTPUT_DIR
-    PARAM=""
-# Retrive the target from the current filename, if no target specified,
-# the variable will be empty
-    TARGET=$(echo $0 | cut -s -f2 -d- | cut -s -f1 -d.)
-    if [[ -n $TARGET ]]
-	then
-    	# Target is not null, specify the build parameters
-    	PARAM="-DCMAKE_TOOLCHAIN_FILE=$IDF_PATH/tools/cmake/toolchain-${TARGET}.cmake -DTARGET=${TARGET} -GNinja"
-    fi
-    #$CMAKE $VARIANT -H. -B$CACHE_DIR -DCMAKE_BUILD_TYPE=$BUILD_TYPE
-    #$CMAKE --build $CACHE_DIR $BUILD_CONCURRENCY
-    rm -rf build && mkdir build && cd build
-    cmake .. $PARAM
-    cmake --build . $BUILD_CONCURRENCY
-    cp -f $CACHE_DIR/lib/libzt.* $LIB_OUTPUT_DIR
-    cp -f $CACHE_DIR/bin/* $BIN_OUTPUT_DIR
-    echo -e "\n - Build cache  : $CACHE_DIR\n - Build output : $BUILD_OUTPUT_DIR\n"
-    $TREE $TARGET_BUILD_DIR
-}
 host-install()
 {
     cd cache/$HOST_PLATFORM-$HOST_MACHINE_TYPE-host-$1/

@@ -677,7 +677,6 @@
 /home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/main/CMakeFiles/install.dir
 /home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/main/CMakeFiles/install/strip.dir
-/home/zzy/PROJ/Zerotier-Espressif/build/libzt/CMakeFiles/pingable-node.dir
 /home/zzy/PROJ/Zerotier-Espressif/build/libzt/CMakeFiles/zto_obj.dir
 /home/zzy/PROJ/Zerotier-Espressif/build/libzt/CMakeFiles/libnatpmp_obj.dir
 /home/zzy/PROJ/Zerotier-Espressif/build/libzt/CMakeFiles/miniupnpc_obj.dir

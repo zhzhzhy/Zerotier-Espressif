@@ -20,6 +20,9 @@ ALLOW_INSTALL_TARGET:BOOL=ON
 //Build host selftest binary
 BUILD_HOST_SELFTEST:BOOL=ON
 
+//Build shared libary
+BUILD_SHARED_LIB:BOOL=ON
+
 //Build static library
 BUILD_STATIC_LIB:BOOL=ON
 
