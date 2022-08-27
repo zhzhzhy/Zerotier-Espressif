@@ -1,17 +1,17 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/zzy/PROJ/Zerotier-Espressif/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_f063b && [1/2] Building C object CMakeFiles/cmTC_f063b.dir/src.c.obj
-[2/2] Linking C executable cmTC_f063b
-FAILED: cmTC_f063b 
-: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_f063b.dir/src.c.obj -o cmTC_f063b   && :
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0x4): undefined reference to `pthread_create'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0x8): undefined reference to `pthread_detach'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0xc): undefined reference to `pthread_cancel'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0x10): undefined reference to `pthread_join'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0x14): undefined reference to `pthread_atfork'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj:(.literal+0x18): undefined reference to `pthread_exit'
-/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f063b.dir/src.c.obj: in function `main':
+Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_e04e5 && [1/2] Building C object CMakeFiles/cmTC_e04e5.dir/src.c.obj
+[2/2] Linking C executable cmTC_e04e5
+FAILED: cmTC_e04e5 
+: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_e04e5.dir/src.c.obj -o cmTC_e04e5   && :
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0x4): undefined reference to `pthread_create'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0x8): undefined reference to `pthread_detach'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0xc): undefined reference to `pthread_cancel'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0x10): undefined reference to `pthread_join'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0x14): undefined reference to `pthread_atfork'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj:(.literal+0x18): undefined reference to `pthread_exit'
+/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_e04e5.dir/src.c.obj: in function `main':
 src.c:(.text+0x1c): undefined reference to `pthread_create'
 /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x26): undefined reference to `pthread_detach'
 /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: src.c:(.text+0x30): undefined reference to `pthread_cancel'
@@ -46,10 +46,10 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/zzy/PROJ/Zerotier-Espressif/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_b6ab7 && [1/2] Building C object CMakeFiles/cmTC_b6ab7.dir/CheckFunctionExists.c.obj
-[2/2] Linking C executable cmTC_b6ab7
-FAILED: cmTC_b6ab7 
-: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_b6ab7.dir/CheckFunctionExists.c.obj -o cmTC_b6ab7  -lpthreads && :
+Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_df9e4 && [1/2] Building C object CMakeFiles/cmTC_df9e4.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_df9e4
+FAILED: cmTC_df9e4 
+: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_df9e4.dir/CheckFunctionExists.c.obj -o cmTC_df9e4  -lpthreads && :
 /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
@@ -59,10 +59,10 @@ ninja: build stopped: subcommand failed.
 Determining if the function pthread_create exists in the pthread failed with the following output:
 Change Dir: /home/zzy/PROJ/Zerotier-Espressif/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_697d8 && [1/2] Building C object CMakeFiles/cmTC_697d8.dir/CheckFunctionExists.c.obj
-[2/2] Linking C executable cmTC_697d8
-FAILED: cmTC_697d8 
-: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_697d8.dir/CheckFunctionExists.c.obj -o cmTC_697d8  -lpthread && :
+Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_5c47d && [1/2] Building C object CMakeFiles/cmTC_5c47d.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_5c47d
+FAILED: cmTC_5c47d 
+: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_5c47d.dir/CheckFunctionExists.c.obj -o cmTC_5c47d  -lpthread && :
 /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthread
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
@@ -72,10 +72,10 @@ ninja: build stopped: subcommand failed.
 Determining if compiler accepts -pthread failed with the following output:
 Change Dir: /home/zzy/PROJ/Zerotier-Espressif/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_1b846 && [1/2] Building C object CMakeFiles/cmTC_1b846.dir/CheckForPthreads.c.obj
-[2/2] Linking C executable cmTC_1b846
-FAILED: cmTC_1b846 
-: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_1b846.dir/CheckForPthreads.c.obj -o cmTC_1b846  -pthread && :
+Run Build Command(s):/home/zzy/.espressif/tools/ninja/1.10.2/ninja cmTC_4e12b && [1/2] Building C object CMakeFiles/cmTC_4e12b.dir/CheckForPthreads.c.obj
+[2/2] Linking C executable cmTC_4e12b
+FAILED: cmTC_4e12b 
+: && /home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_4e12b.dir/CheckForPthreads.c.obj -o cmTC_4e12b  -pthread && :
 xtensa-esp32-elf-gcc: error: unrecognized command line option '-pthread'
 ninja: build stopped: subcommand failed.
 
