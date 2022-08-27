@@ -87,6 +87,8 @@ include_directories(/usr/lib/jvm/java-11-openjdk-amd64/include/linux/)
 #Include IDF include dir
 include_directories($ENV{IDF_PATH}/components/lwip/port/esp32/include)
 include_directories($ENV{IDF_PATH}/components/newlib/platform_include)
+include_directories($ENV{IDF_PATH}/components/esp_system/include)
+include_directories(${PROJ_DIR}/../build/config)
 # ZeroTier
 include_directories(${ZTO_SRC_DIR})
 include_directories(${ZTO_SRC_DIR}/include)

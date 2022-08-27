@@ -5,4 +5,4 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 add_test(selftest-c "/home/zzy/PROJ/Zerotier-Espressif/build/libzt/bin/selftest-c")
-set_tests_properties(selftest-c PROPERTIES  _BACKTRACE_TRIPLES "/home/zzy/PROJ/Zerotier-Espressif/libzt/CMakeLists.txt;694;add_test;/home/zzy/PROJ/Zerotier-Espressif/libzt/CMakeLists.txt;0;")
+set_tests_properties(selftest-c PROPERTIES  _BACKTRACE_TRIPLES "/home/zzy/PROJ/Zerotier-Espressif/libzt/CMakeLists.txt;696;add_test;/home/zzy/PROJ/Zerotier-Espressif/libzt/CMakeLists.txt;0;")
