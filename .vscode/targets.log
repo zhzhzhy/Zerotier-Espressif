@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 27 20:26:09 2022
+# Make data base, printed on Sat Aug 27 20:57:21 2022
 
 # Variables
 
@@ -57,7 +57,7 @@ VSCODE_CODE_CACHE_PATH = /home/zzy/.config/Code/CachedData/e4503b30fc78200f846c6
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.KQQBR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.1NUQR1
 # default
 .LOADED := 
 # default
@@ -89,13 +89,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/zzy/.oh-my-zsh
 # environment
-VSCODE_PID = 4326
+VSCODE_PID = 4110
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2441,unix/zzy-MS-7A40:/tmp/.ICE-unix/2441
+SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2389,unix/zzy-MS-7A40:/tmp/.ICE-unix/2389
 # automatic
 *F = $(notdir $*)
 # environment
@@ -135,7 +135,7 @@ LC_MONETARY = zh_CN.UTF-8
 # environment
 LC_TIME = zh_CN.UTF-8
 # environment
-INVOCATION_ID = 0cc09c051be448179fc7bc252665f75f
+INVOCATION_ID = e948e2c05f904b128e1ba4d39ef6ecb5
 # environment
 USERNAME = zzy
 # environment
@@ -165,7 +165,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2461
+SYSTEMD_EXEC_PID = 2409
 # environment
 DISPLAY = :0
 # environment
@@ -175,11 +175,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2245
+MANAGERPID = 2193
 # environment
 LC_MEASUREMENT = zh_CN.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4326
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4110
 # environment
 PAGER = less
 # environment
@@ -189,7 +189,7 @@ LC_PAPER = zh_CN.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:32471
+JOURNAL_STREAM = 8:38601
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -283,11 +283,11 @@ GNUmakefile:
 # current buf: size = 8162 B / used = 156 B / count = 18 / avg = 8 B
 
 # strcache performance: lookups = 21 / hit rate = 14%
+# hash-table stats:
  
 make: *** No rule to make target 'all'.  Stop.
 
-# hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Sat Aug 27 20:26:09 2022
+# Finished Make data base on Sat Aug 27 20:57:21 2022
 
  

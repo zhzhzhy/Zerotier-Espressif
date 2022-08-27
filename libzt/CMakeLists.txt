@@ -71,13 +71,13 @@ set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(INTERMEDIATE_LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib/intermediate)
-if(UNIX)
-    set(LWIP_PORT_DIR ${PROJ_DIR}/ext/lwip-contrib/ports/unix/port)
-endif()
 
-if(BUILD_WIN)
+    set(LWIP_PORT_DIR ${PROJ_DIR}/ext/lwip-contrib/ports/unix/port)
+
+
+
     set(LWIP_PORT_DIR ${PROJ_DIR}/ext/lwip-contrib/ports/win32)
-endif()
+
 
 # ------------------------------------------------------------------------------
 # |                             INCLUDE DIRECTORIES                            |

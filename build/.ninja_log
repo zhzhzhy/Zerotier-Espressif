@@ -1,8 +1,0 @@
-# ninja log v5
-7	14	1661603198334928129	project_elf_src_esp32.c	5f44753a24129230
-7	14	1661603198334928129	/home/zzy/PROJ/Zerotier-Espressif/build/project_elf_src_esp32.c	5f44753a24129230
-8	15	1661603198338928155	esp-idf/esp_system/ld/memory.ld	9a02acd3e4c76ff7
-8	15	1661603198338928155	/home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/esp_system/ld/memory.ld	9a02acd3e4c76ff7
-15	44	1661603198370928362	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/arc4.c.obj	ab0f0591a824a999
-7	92	1661603198374928388	partition_table/partition-table.bin	adc5027179b303b4
-7	92	1661603198374928388	/home/zzy/PROJ/Zerotier-Espressif/build/partition_table/partition-table.bin	adc5027179b303b4

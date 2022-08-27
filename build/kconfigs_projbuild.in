@@ -1,6 +1,0 @@
-source "/home/zzy/esp/esp-idf/components/app_update/Kconfig.projbuild"
-source "/home/zzy/esp/esp-idf/components/bootloader/Kconfig.projbuild"
-source "/home/zzy/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
-source "/home/zzy/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
-source "/home/zzy/esp/esp-idf/components/partition_table/Kconfig.projbuild"
-source "/home/zzy/PROJ/Zerotier-Espressif/main/Kconfig.projbuild"
