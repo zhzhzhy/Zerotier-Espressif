@@ -84,6 +84,8 @@ set(INTERMEDIATE_LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib/intermediate)
 # ------------------------------------------------------------------------------
 # Temporary measure to test GitHub workflow on Ubuntu
 include_directories(/usr/lib/jvm/java-11-openjdk-amd64/include/linux/)
+#Include IDF include dir
+include_directories($ENV{IDF_PATH}/components/lwip/port/esp32/include)
 # ZeroTier
 include_directories(${ZTO_SRC_DIR})
 include_directories(${ZTO_SRC_DIR}/include)
