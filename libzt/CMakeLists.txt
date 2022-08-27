@@ -99,6 +99,7 @@ include_directories(${PROJ_DIR}/include)
 include_directories(${PROJ_DIR}/ext/concurrentqueue)
 include_directories(${LWIP_SRC_DIR}/include)
 include_directories(${LWIP_PORT_DIR}/include)
+include_directories(${LWIP_SRC_DIR}/include/compat/posix)
 
 # ------------------------------------------------------------------------------
 # |                        TARGET AND VARIANT SELECTION                        |
