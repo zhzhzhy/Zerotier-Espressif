@@ -1,0 +1,21 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/zzy/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/zzy/PROJ/Zerotier-Espressif/build/bootloader",
+    "config_file":        "/home/zzy/PROJ/Zerotier-Espressif/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.4.2-dirty",
+    "target":             "esp32",
+    "rev":                "0",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/zzy/esp/esp-idf/components/efuse/Kconfig;/home/zzy/esp/esp-idf/components/esp32/Kconfig;/home/zzy/esp/esp-idf/components/esp_common/Kconfig;/home/zzy/esp/esp-idf/components/esp_hw_support/Kconfig;/home/zzy/esp/esp-idf/components/esp_system/Kconfig;/home/zzy/esp/esp-idf/components/freertos/Kconfig;/home/zzy/esp/esp-idf/components/hal/Kconfig;/home/zzy/esp/esp-idf/components/log/Kconfig;/home/zzy/esp/esp-idf/components/newlib/Kconfig;/home/zzy/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/zzy/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/zzy/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/zzy/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/zzy/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/zzy/esp/esp-idf/components/bootloader", "/home/zzy/esp/esp-idf/components/bootloader_support", "/home/zzy/esp/esp-idf/components/efuse", "/home/zzy/esp/esp-idf/components/esp32", "/home/zzy/esp/esp-idf/components/esp_common", "/home/zzy/esp/esp-idf/components/esp_hw_support", "/home/zzy/esp/esp-idf/components/esp_rom", "/home/zzy/esp/esp-idf/components/esp_system", "/home/zzy/esp/esp-idf/components/esptool_py", "/home/zzy/esp/esp-idf/components/freertos", "/home/zzy/esp/esp-idf/components/hal", "/home/zzy/esp/esp-idf/components/log", "/home/zzy/esp/esp-idf/components/bootloader/subproject/main", "/home/zzy/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/zzy/esp/esp-idf/components/newlib", "/home/zzy/esp/esp-idf/components/partition_table", "/home/zzy/esp/esp-idf/components/soc", "/home/zzy/esp/esp-idf/components/spi_flash", "/home/zzy/esp/esp-idf/components/xtensa", "" ]
+}
