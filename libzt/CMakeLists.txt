@@ -91,6 +91,7 @@ include_directories(${PROJ_DIR}/../esp-idf/components/newlib/platform_include)
 include_directories(${PROJ_DIR}/../esp-idf/components/freertos/include)
 include_directories(${PROJ_DIR}/../esp-idf/components/freertos/include/esp_additions/freertos)
 include_directories(${PROJ_DIR}/../esp-idf/components/esp_system/include)
+include_directories(${PROJ_DIR}/../esp-idf/components/esp_common/include)
 include_directories(${PROJ_DIR}/../build/config)
 # ZeroTier
 include_directories(${ZTO_SRC_DIR})
