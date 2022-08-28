@@ -85,6 +85,9 @@ set(INTERMEDIATE_LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib/intermediate)
 # Temporary measure to test GitHub workflow on Ubuntu
 include_directories(/usr/lib/jvm/java-11-openjdk-amd64/include/linux/)
 include($ENV{IDF_PATH}/tools/cmake/idf.cmake)
+#idf_component_register(SRC_DIRS ${PROJ_DIR}/src ${PROJ_DIR}/ext 
+#                        INCLUDE_DIRS ${PROJ_DIR}/include
+#                        REQUIRES lwip newlib freertos esp_system esp_common)
 #Include IDF include dir
 include_directories(${PROJ_DIR}/../esp-idf/components/lwip/port/esp32/include)
 include_directories(${PROJ_DIR}/../esp-idf/components/newlib/platform_include)
