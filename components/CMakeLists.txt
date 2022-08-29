@@ -19,14 +19,3 @@ idf_component_register(SRCS "${libzt_srcs}"
 
 
 
-# Make sure mbedtls finds the same Python interpreter as IDF uses
-idf_build_get_property(python PYTHON)
-set(Python3_EXECUTABLE ${python})
-
-# Needed to for include_next includes to work from within libzt
-#include_directories("${COMPONENT_DIR}/port/include")
-
-# Import libzt library targets
-add_subdirectory(libzt)
-
-
