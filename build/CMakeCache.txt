@@ -14,18 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Enable the install target
-ALLOW_INSTALL_TARGET:BOOL=ON
-
-//Build host selftest binary
-BUILD_HOST_SELFTEST:BOOL=ON
-
-//Build shared libary
-BUILD_SHARED_LIB:BOOL=ON
-
-//Build static library
-BUILD_STATIC_LIB:BOOL=ON
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/zzy/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-addr2line
 
@@ -274,18 +262,6 @@ MBEDTLS_FATAL_WARNINGS:BOOL=ON
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
-//Compile with -fstack-protector
-STACK_PROTECTOR:BOOL=ON
-
-//Value Computed by CMake
-TEST_BINARY_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/components/libzt
-
-//Value Computed by CMake
-TEST_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-TEST_SOURCE_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/components/libzt
-
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
 
@@ -297,9 +273,6 @@ USE_SHARED_MBEDTLS_LIBRARY:BOOL=OFF
 
 //Build mbed TLS static library.
 USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
-
-//Disable central API
-ZTS_DISABLE_CENTRAL_API:BOOL=ON
 
 //Dependencies for the target
 __idf_app_trace_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
@@ -321,6 +294,9 @@ __idf_cmock_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__
 
 //Dependencies for the target
 __idf_coap_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
+
+//Dependencies for the target
+__idf_components_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
 
 //Dependencies for the target
 __idf_console_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp32;
@@ -535,9 +511,6 @@ libzt_esp32_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 libzt_esp32_SOURCE_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif
 
-//Dependencies for the target
-lwip_pic_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
 //Value Computed by CMake
 mbed TLS_BINARY_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/mbedtls/mbedtls
 
@@ -555,33 +528,6 @@ mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_
 
 //Dependencies for the target
 mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp32;general;mbedcrypto;
-
-//Dependencies for the target
-miniupnpc_pic_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Dependencies for the target
-natpmp_pic_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Dependencies for the target
-zt-static_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Value Computed by CMake
-zt_BINARY_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/build/esp-idf/components/libzt
-
-//Value Computed by CMake
-zt_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-zt_SOURCE_DIR:STATIC=/home/zzy/PROJ/Zerotier-Espressif/components/libzt
-
-//Dependencies for the target
-zt_pic_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Dependencies for the target
-ztcore_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
-
-//Dependencies for the target
-zto_pic_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
 
 
 ########################
@@ -677,14 +623,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
-//Have library pthreads
-CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
-//Have library pthread
-CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=
-//Have include pthread.h
-CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/zzy/PROJ/Zerotier-Espressif
@@ -705,7 +643,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=96
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=95
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -756,8 +694,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.34.1()]
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/zzy/.espressif/python_env/idf4.4_py3.10_env/bin/python3.10][cfound components: Interpreter ][v3.10.4()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//Result of TRY_COMPILE
-THREADS_HAVE_PTHREAD_ARG:INTERNAL=FALSE
 //Path to a program.
 _Python3_EXECUTABLE:INTERNAL=/home/zzy/.espressif/python_env/idf4.4_py3.10_env/bin/python3.10
 //Python3 Properties
