@@ -1,7 +1,7 @@
 idf_build_get_property(idf_target IDF_TARGET)
 idf_build_get_property(python PYTHON)
 
-set(priv_requires soc esp_hw_support)
+set(priv_requires soc esp_hw_support lwip)
 
 if(NOT BOOTLOADER_BUILD)
     list(APPEND priv_requires esp_pm)
@@ -15,14 +15,6 @@ idf_component_register(SRCS "${libzt_srcs}"
     INCLUDE_DIRS "${libzt_include_dirs}"
     PRIV_REQUIRES "${priv_requires}"
     )
-
-# Determine the type of libzt component library
-if(libzt_srcs STREQUAL "")
-    # For no sources in component library we must use "INTERFACE"
-    set(linkage_type INTERFACE)
-else()
-    set(linkage_type PUBLIC)
-endif()
 
 
 
