@@ -1,3 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(libzt_esp32)
 idf_build_get_property(idf_target IDF_TARGET)
 idf_build_get_property(python PYTHON)
 
