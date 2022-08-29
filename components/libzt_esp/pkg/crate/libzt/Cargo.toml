@@ -1,0 +1,29 @@
+[package]
+name = "libzt"
+version = "0.1.2"
+authors = ["Joseph Henry <joseph.henry@zerotier.com>"]
+edition = "2018"
+description = "Encrypted P2P SD-WAN library by ZeroTier"
+documentation = "https://docs.zerotier.com"
+repository = "https://github.com/zerotier/libzt"
+readme = "README.md"
+homepage = "https://www.zerotier.com"
+license-file = "LICENSE.txt"
+keywords = ["zerotier", "p2p", "vpn", "socket", "network"]
+categories = ["network-programming", "cryptography"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.58"
+libc = "0.2"
+cmake = "0.1"
+
+[lib]
+name = "libzt"
+path = "src/lib.rs"
+
+[[example]]
+name = "libzt-test-app"
+path = "src/examples/libzt-test-app.rs"
+
