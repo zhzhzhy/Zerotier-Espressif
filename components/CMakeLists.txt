@@ -17,5 +17,5 @@ idf_component_register(SRCS "${libzt_srcs}"
     )
 
 
-
+add_subdirectory(libzt)
 
