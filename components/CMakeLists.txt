@@ -8,7 +8,7 @@ if(NOT BOOTLOADER_BUILD)
 endif()
 
 set(libzt_srcs "")
-set(libzt_include_dirs "port/include" "mbedtls/include" "./mbedtls/library")
+set(libzt_include_dirs "libzt/include")
 
 
 idf_component_register(SRCS "${libzt_srcs}"
@@ -17,7 +17,7 @@ idf_component_register(SRCS "${libzt_srcs}"
     )
 
 # Determine the type of libzt component library
-if(libztsrcs STREQUAL "")
+if(libzt_srcs STREQUAL "")
     # For no sources in component library we must use "INTERFACE"
     set(linkage_type INTERFACE)
 else()
@@ -31,10 +31,10 @@ endif()
 idf_build_get_property(python PYTHON)
 set(Python3_EXECUTABLE ${python})
 
-# Needed to for include_next includes to work from within mbedtls
-include_directories("${COMPONENT_DIR}/port/include")
+# Needed to for include_next includes to work from within libzt
+#include_directories("${COMPONENT_DIR}/port/include")
 
-# Import mbedtls library targets
+# Import libzt library targets
 add_subdirectory(libzt)
 
 
