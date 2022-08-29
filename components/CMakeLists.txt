@@ -7,8 +7,8 @@ if(NOT BOOTLOADER_BUILD)
     list(APPEND priv_requires esp_pm)
 endif()
 
-set(libzt_srcs "")
-set(libzt_include_dirs "libzt/include")
+set(libzt_srcs "libzt_esp")
+set(libzt_include_dirs "libzt_esp/include")
 
 
 idf_component_register(SRCS "${libzt_srcs}"
