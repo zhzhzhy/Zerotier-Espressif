@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 28 00:47:16 2022
+# Make data base, printed on Mon Aug 29 18:56:40 2022
 
 # Variables
 
@@ -93,13 +91,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/zzy/.oh-my-zsh
 # environment
-VSCODE_PID = 47609
+VSCODE_PID = 53000
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2601,unix/zzy-MS-7A40:/tmp/.ICE-unix/2601
+SESSION_MANAGER = local/zzy-MS-7A40:@/tmp/.ICE-unix/2649,unix/zzy-MS-7A40:/tmp/.ICE-unix/2649
 # automatic
 *F = $(notdir $*)
 # environment
@@ -141,7 +139,7 @@ LC_MONETARY = zh_CN.UTF-8
 # environment
 LC_TIME = zh_CN.UTF-8
 # environment
-INVOCATION_ID = 6643e74da3244aa7a0b4f58b4e094d7c
+INVOCATION_ID = 6a68518cc65f49a78b3c040b5baf8894
 # environment
 USERNAME = zzy
 # environment
@@ -169,7 +167,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2625
+SYSTEMD_EXEC_PID = 2668
 # environment
 DISPLAY = :0
 # environment
@@ -179,11 +177,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2180
+MANAGERPID = 2258
 # environment
 LC_MEASUREMENT = zh_CN.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 47609
+GIO_LAUNCHED_DESKTOP_FILE_PID = 53000
 # environment
 PAGER = less
 # environment
@@ -195,7 +193,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:44805
+JOURNAL_STREAM = 8:36651
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -235,9 +233,9 @@ LC_IDENTIFICATION = zh_CN.UTF-8
 
 # Directories
 
-# . (device 66310, inode 4592396): 9 files, no impossibilities.
+# . (device 66310, inode 4592396): 7 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -283,17 +281,19 @@ GNUmakefile:
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
- 
 # No 'vpath' search paths.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 150 B / avg = 8 B
-# current buf: size = 8162 B / used = 150 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 15 / storage = 135 B / avg = 9 B
+# current buf: size = 8162 B / used = 135 B / count = 15 / avg = 9 B
 
-# strcache performance: lookups = 20 / hit rate = 15%
+# strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Sun Aug 28 00:47:16 2022
+# Load=15/8192=0%, Rehash=0, Collisions=0/18=0%
+# Finished Make data base on Mon Aug 29 18:56:40 2022
 
  
